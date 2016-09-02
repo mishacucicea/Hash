@@ -44,7 +44,7 @@ namespace Hash.Web.Controllers
                     break;
             }
 
-            var hash = ComputeHash(textToHash, hashEncoding);
+            var hash = ComputeHash(textToHash.Trim(), hashEncoding);
 
             return Content(hash);
         }
