@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>SHA 256</h2>
+       <textarea style="min-width:555px;height:80px" placeholder="Enter text to hash" id="textToHash"></textarea>
+        <label for="encoding">Encoding:</label>
+        <select id="encoding">
+            <option value="UTF8"> UTF-8</option>
+            <option value="Unicode"> UTF-16 (aka Unicode)</option>
+        </select>
+        <input type="text" style="min-width:555px" id="hashResult" placeholder="hash result" readonly />
+        <input type="button" value="Calculate Hash" id="btnComputeHash" />
+    </div>
+</div>
